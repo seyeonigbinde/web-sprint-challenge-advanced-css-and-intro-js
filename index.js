@@ -297,7 +297,7 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
   
     function addArtist(array){
-    
+
       array.push('id: 20',
       'name: Onigbinde Seye', 
       'years: 1987 - 2021',
@@ -322,7 +322,7 @@ function lotsOfArt(array){
   const morePaintings = [];
   for (let i=0; i<array.length; i++){
     if (array[i]["paintings"] > 100){
-      morePaintings.push[array[i]["name"]];
+     morePaintings.push(array[i]["name"]);
   }
 }
 return morePaintings;
