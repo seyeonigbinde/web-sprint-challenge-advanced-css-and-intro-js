@@ -20,9 +20,7 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
-/* *{
-    border: 1px solid grey;
-} */
+
 html{
     font-size:62.5%;
 }
@@ -158,7 +156,6 @@ nav a{
 .title-container h1{
     width: 70%;
     font-size: 4rem;
-    font-weight: bold;
     padding: 0 auto;
 }
 button{
