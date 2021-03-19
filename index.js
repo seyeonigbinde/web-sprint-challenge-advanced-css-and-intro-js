@@ -208,10 +208,10 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log (artists[0].name);
+console.log ('task 1:', artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
-console.log (artists[2].bio);
+console.log ('task 1:', artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -246,21 +246,15 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
   const ageArray = [];
-
   for(let i = 0; i < array.length; i++){
-    if(array[i]["years"] > [1900]){
+    if((array[i]["years"] >= [1900]) && (array[i]["years"] <= [2000])){
      ageArray.push(array[i]["name"]);
        }
     }
     return ageArray;
 }
-
 console.log ('task 4:', get20s(artists));
 
-// for (let i=0; i<array.length; i++){
-//   if (array[i]["paintings"] > 100){
-//    morePaintings.push(array[i]["name"]);
-// }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -272,13 +266,13 @@ console.log ('task 4:', get20s(artists));
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, num){
-  const deleteArtist = [];
+  // const deleteArtist = [];
   for(let i = 0; i<array.length; i++){
     if (array[i] === num){
-        deleteArtist.splice(i, 1);
+        array.splice([i], 1);
     } 
 }
-return array.length;
+return array.length-1;
 }
 console.log ('task 5:', removeArtist(artists, 0));
 
@@ -312,7 +306,6 @@ Example: addArtist(artists) should return the artists array with the above objec
   
       return array;
     }
-  
     console.log('task 6:', addArtist(artists));
       
   

@@ -158,6 +158,13 @@ nav a{
 .title-container h1{
     width: 70%;
     font-size: 4rem;
+    font-weight: bold;
+    padding: 0 auto;
+}
+button{
+    font-size: 1.4rem;
+    width: 25%;
+
 }
 .title-container hr{
     width:100%;
@@ -170,13 +177,14 @@ nav a{
     justify-content: center;
     align-items: center;
     width: 100%;
+   
 }
 .artist{
     width:100%;
     text-align:center;
 }
 .artist a{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .artist img{
     width: 50%;
@@ -188,4 +196,5 @@ nav a{
     margin: 0 auto; 
     padding: 4% 0;
 }
+
 }
