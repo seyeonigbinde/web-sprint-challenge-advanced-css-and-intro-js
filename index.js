@@ -244,19 +244,23 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, years){
+function get20s(array){
   const ageArray = [];
 
   for(let i = 0; i < array.length; i++){
-  if(array[i].years.includes(years >= ['1900']  && years <= ['2000'])){
-     ageArray.push(array[i].name);
+  if(array[i]["years"] >= 1900  && array[i]["years"]<= 2000){
+     ageArray.push(array[i]["name"]);
        }
     }
     return ageArray;
 }
 
-console.log ('task 4:', get20s(artists, 'years'));
+console.log ('task 4:', get20s(artists));
 
+// for (let i=0; i<array.length; i++){
+//   if (array[i]["paintings"] > 100){
+//    morePaintings.push(array[i]["name"]);
+// }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -269,7 +273,7 @@ console.log ('task 4:', get20s(artists, 'years'));
 
 function removeArtist(array, num){
   for(let i = 0; i<array.length; i++){
-    if (array[i] === num){
+    if (array[i] == num){
         array.splice (i, 1);
     } 
 }
