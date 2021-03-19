@@ -248,7 +248,7 @@ function get20s(array){
   const ageArray = [];
 
   for(let i = 0; i < array.length; i++){
-  if(array[i]["years"] >= 1900  && array[i]["years"]<= 2000){
+    if(array[i]["years"] > [1900]){
      ageArray.push(array[i]["name"]);
        }
     }
@@ -272,9 +272,10 @@ console.log ('task 4:', get20s(artists));
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, num){
+  const deleteArtist = [];
   for(let i = 0; i<array.length; i++){
-    if (array[i] == num){
-        array.splice (i, 1);
+    if (array[i] === num){
+        deleteArtist.splice(i, 1);
     } 
 }
 return array.length;
