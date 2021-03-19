@@ -295,19 +295,21 @@ Use addArtist to do the following:
 3. Return the resulting array
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
-
-function addArtist(array, id, name, years,genre, nationality, bio){
-    array.push({id: id, name: name, years: years, genre: genre, nationality: nationality, bio: bio});
-
-    return array;
-  }
-
-  console.log('task 6:', artists, '{id: 20',
-    'name: Onigbinde Seye', 
-    'years: 1987 - 2021',
-    'genre: Web Design', 
-    'nationality: Nigerian',
-    'bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada arcu a magna dapibus gravida. Sed quis ante quis ante tincidunt dignissim. In sodales dignissim elit in vestibulum. Vivamus eget congue elit. Duis arcu erat, fringilla nec eros nec, mollis pulvinar metus. Nunc non interdum est. In maximus sollicitudin scelerisque.}');
+  
+    function addArtist(array){
+    
+      array.push('id: 20',
+      'name: Onigbinde Seye', 
+      'years: 1987 - 2021',
+      'genre: Web Design', 
+      'nationality: Nigerian',
+      'bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada arcu a magna dapibus gravida. Sed quis ante quis ante tincidunt dignissim. In sodales dignissim elit in vestibulum. Vivamus eget congue elit. Duis arcu erat, fringilla nec eros nec, mollis pulvinar metus. Nunc non interdum est. In maximus sollicitudin scelerisque.');
+  
+      return array;
+    }
+  
+    console.log('task 6:', addArtist(artists));
+      
   
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -316,12 +318,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  const morePaintings = [];
+  for (let i=0; i<array.length; i++){
+    if (array[i]["paintings"] > 100){
+      morePaintings.push[array[i]["name"]];
+  }
+}
+return morePaintings;
 }
 
-
-
+console.log('task 7:', lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
